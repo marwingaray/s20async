@@ -1,0 +1,41 @@
+<section class="container-md p-3">
+
+    <section class=" p-3">
+ 
+      <section class="bg-light p-3 rounded-1">
+        <h1 class="text-center">Bienvenido a la aplicación de Interceptores!</h1>
+        <section class="rounded-1 text-center">
+          <img src="https://angular.io/assets/images/logos/angular/angular.svg" width="250px" class="text-center">
+        </section>
+        <pre class="d-none">{{postsLi|json}}</pre>
+        <table class="table table-hover">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>TITLE</th>
+              <th>BODY</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let item of postsLi">
+              <td>{{item.id}}</td>
+              <td>{{item.title}}</td>
+              <td>{{item.body}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </section>
+  </section>
+  
+  <style>
+    figure {
+      width: min(80%, 10rem);
+      margin-inline: auto;
+      background-color: coral;
+    }
+  
+    .bg-ghost {
+      background-color: lightgoldenrodyellow;
+    }
+  </style>
